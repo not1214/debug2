@@ -7,7 +7,8 @@
       <%= render 'books/form', book: Book.new %>
     </div>
     <div class='col-md-8 offset-md-1'>
-  		<h2>Book detail</h2>
+  		<%= render "layouts/search" %>
+      <h2>Book detail</h2>
   		<table class='table'>
   		  <tr>
   		    <td><%= link_to user_path(@book.user) do %>
