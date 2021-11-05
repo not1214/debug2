@@ -34,11 +34,11 @@
         </tr>
       </table>
       
-      <table id="comment_<%= @book.id %>">
+      <table id="comment_index">
         <%= render "comments/comment", book: @book %>
       </table>
          
-      <div>
+      <div class="comment_form">
         <%= render "comments/form", {book: @book, comment: @comment} %>
       </div>
     

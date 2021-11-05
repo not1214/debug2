@@ -1,0 +1,5 @@
+$("#comment_index").html("<%= escape_javascript(render partial: "comments/comment", locals: {book: @book}) %>");
+
+$("textarea").val("");
+
+$("#comment_error").html("<%= j(render "layouts/errors", obj: @comment) %>");
